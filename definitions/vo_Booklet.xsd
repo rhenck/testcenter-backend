@@ -3,7 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     elementFormDefault="qualified">
 
-<xs:include schemaLocation="vo_Common.xsd"/>
+<xs:include schemaLocation="https://raw.githubusercontent.com/iqb-berlin/testcenter-iqb-php/master/definitions/vo_Common.xsd"/>
 
   <!-- ###################################################################-->
   <xs:complexType name="UnitType">
