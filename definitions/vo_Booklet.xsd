@@ -73,11 +73,11 @@
             <xs:sequence>
               <xs:element name="Config" minOccurs="1" maxOccurs="unbounded">
                 <xs:complexType>
-                <xs:simpleContent>
-                  <xs:extension base="xs:string">
-                    <xs:attribute name="key" type="xs:ID" use="required"/>
-                  </xs:extension>
-                </xs:simpleContent>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="key" type="xs:ID" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
