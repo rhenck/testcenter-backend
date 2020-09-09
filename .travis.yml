@@ -20,6 +20,6 @@ script:
 
 after_success:
   - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
-      echo "Branch ist master"
+      echo "Branch ist master";
       echo $TRAVIS_TAG
     fi
