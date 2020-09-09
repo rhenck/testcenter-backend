@@ -26,7 +26,8 @@ after_script:
 
 after_success:
   - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
-      echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin;
-      make build-image;
-      make push-image;
+      # echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin;
+      # make build-image;
+      # make push-image;
+      echo "Branch ist master"
     fi
