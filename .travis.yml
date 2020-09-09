@@ -19,6 +19,6 @@ script:
   - sleep 10
 
 after_success:
-  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
-      echo "$TRAVIS_TAG";
+  - if [[ "$TRAVIS_TAG" ]]; then
+      echo "!!sdfsdf!!!";
     fi
