@@ -17,6 +17,7 @@ install:
 
 script:
   - sleep 10
+  - echo "non tag schn"
 
 after_success:
   - if [[ "$TRAVIS_TAG" ]]; then
