@@ -16,10 +16,10 @@ install:
   - make init-dev-config
 
 script:
-  - sleep 10
+  - sleep 8
   - echo "non tag schn"
 
 after_success:
-  - if [[ "$TRAVIS_TAG" ]]; then
+  - if [ "$TRAVIS_TAG" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
       echo "!!sdfsdf!!!";
     fi
