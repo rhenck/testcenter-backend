@@ -20,6 +20,12 @@ script:
   - echo "non tag schn"
 
 after_success:
+  - if [ "$TRAVIS_TAG" ]; then
+      echo "Tag ja";
+    fi
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+      echo "Master ja";
+    fi
   - if [ "$TRAVIS_TAG" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
-      echo "!!sdfsdf!!!";
+      echo "BEIDE ja";
     fi
